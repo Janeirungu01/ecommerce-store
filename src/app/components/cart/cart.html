@@ -1,1 +1,17 @@
-<p>cart works!</p>
+<h2>Shopping Cart</h2>
+
+@if (items.length === 0) {
+  <div>Your cart is empty.</div>
+}
+
+<ul>
+  @for (item of items; track item) {
+    <li>
+      {{ item.name }} - Ksh {{ item.price }}
+    </li>
+  }
+</ul>
+
+@if (items.length > 0) {
+  <button (click)="clearCart()">Clear Cart</button>
+}
