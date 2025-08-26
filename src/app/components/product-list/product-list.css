@@ -1,13 +1,13 @@
 .products {
   display: flex;
   flex-wrap: wrap; 
-  margin-top: 20px;        /* allow wrapping to new rows */
-  gap: 1rem;               /* space between cards */
-  justify-content: center; /* center items */
+  margin-top: 20px;      
+  gap: 1rem;               
+  justify-content: center; 
 }
 
 .card {
-  flex: 1 1 calc(25% - 1rem); /* 4 cards per row (responsive) */
+  flex: 1 1 calc(25% - 1rem); 
   max-width: 300px;
   min-width: 220px;
   border: 1px solid #ddd;
@@ -21,6 +21,6 @@
 .card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* crop nicely */
+  object-fit: cover;
   border-radius: 6px;
 }
