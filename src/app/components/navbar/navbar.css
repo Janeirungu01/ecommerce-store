@@ -1,0 +1,6 @@
+.active {
+    @apply font-bold text-red-600;
+
+    font-size: large;
+    color: brown;
+}
